@@ -1,7 +1,7 @@
-
 export default defineNuxtConfig({
   modules: [
-    '@nuxtjs/tailwindcss', 
+    '@nuxtjs/tailwindcss',
+    '@vercel/speed-insights/nuxt' 
   ],
 
   css: ['@/assets/css/main.css'],
@@ -15,6 +15,6 @@ export default defineNuxtConfig({
   },
 
   router: {
-    middleware: ['auth'] 
+    middleware: ['auth']
   }
 })
