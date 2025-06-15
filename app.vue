@@ -1,14 +1,18 @@
 <template>
-  <div class="min-h-screen bg-gray-100 text-gray-900">
-  
-    <main class="">
-      <NuxtPage />
-      <SpeedInsights /> 
-    </main>
+  <div>
+    <NuxtLayout />
+    <NuxtPage />
   </div>
 </template>
 
-
 <script setup>
-import { SpeedInsights } from "@vercel/speed-insights/nuxt"
+useHead({
+  script: [
+    {
+      src: 'https://speed.vercel.dev/script.js',
+      'data-sdkn': 'speed-insights',
+      defer: true
+    }
+  ]
+})
 </script>
