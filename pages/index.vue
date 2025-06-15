@@ -97,7 +97,6 @@
     //   return
     // }
   
-    // Simulasi login sukses
     localStorage.setItem('token', 'mock-token-eci')
     router.push('/home')
   }

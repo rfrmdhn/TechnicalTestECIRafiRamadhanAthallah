@@ -1,25 +1,20 @@
-// nuxt.config.ts
+
 export default defineNuxtConfig({
-  // Module bawaan Nuxt
   modules: [
-    '@nuxtjs/tailwindcss', // Tailwind CSS
+    '@nuxtjs/tailwindcss', 
   ],
 
-  // File global CSS
   css: ['@/assets/css/main.css'],
 
-  // Aktifkan devtools
   devtools: { enabled: true },
 
-  // Runtime Config (jika nanti pakai env/token)
   runtimeConfig: {
     public: {
-      apiBase: '/api' // Default base URL untuk useFetch
+      apiBase: '/api'
     }
   },
 
-  // Router middleware global
   router: {
-    middleware: ['auth'] // Ini opsional, jika ingin eksplisit
+    middleware: ['auth'] 
   }
 })

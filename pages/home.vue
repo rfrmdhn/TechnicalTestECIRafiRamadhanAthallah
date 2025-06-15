@@ -54,7 +54,7 @@
           <p class="text-lg font-semibold text-gray-800">Form Data</p>
           <button
             class="mt-4 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full transition shadow-sm"
-            @click="goTo('/form')"
+            @click="goTo('/formData/form')"
           >
             Buka Modul
           </button>
