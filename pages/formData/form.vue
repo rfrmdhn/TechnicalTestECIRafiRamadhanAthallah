@@ -231,7 +231,7 @@
       ...form.value,
       foto: preview.value ?? ''
     }
-    router.push({ path: '/result', query })
+    router.push({ path: '/formData/result', query })
   }
   </script>
   
